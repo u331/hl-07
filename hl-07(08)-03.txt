@@ -1,0 +1,17 @@
+WOMEN
+//*[@id="block_top_menu"]/ul/li[1]/a
+/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[1]/a
+#block_top_menu > ul > li:nth-child(1) > a
+.sf-menu > li:nth-child(1) > a:nth-child(1)
+
+
+
+Dresses
+//*[@id="block_top_menu"]/ul/li[2]/a
+#block_top_menu > ul > li:nth-child(2) > a
+.sf-menu > li:nth-child(2) > a:nth-child(1)
+
+
+
+
+
