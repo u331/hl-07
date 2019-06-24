@@ -1,17 +1,128 @@
-WOMEN
-//*[@id="block_top_menu"]/ul/li[1]/a
-/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[1]/a
-#block_top_menu > ul > li:nth-child(1) > a
-.sf-menu > li:nth-child(1) > a:nth-child(1)
+http://automationpractice.com/index.php?controller=authentication&back=my-account#accountcreation
 
+01) banner div
+#header div.banner
+//*[@id="header"]//div[contains(@class,'banner')]
 
+02) banner image
+#header div.banner img
+//*[@id="header"]//div[contains(@class,'banner')]//img
 
-Dresses
-//*[@id="block_top_menu"]/ul/li[2]/a
-#block_top_menu > ul > li:nth-child(2) > a
-.sf-menu > li:nth-child(2) > a:nth-child(1)
+03) banner a
+#header div.banner a
+//*[@id="header"]//div[contains(@class,'banner')]//a
 
+04) Call us now:
+--- There are no any css selector for text separately from some html-element. ---
+--- So css selector of the wrapper element is: ---
+#header .shop-phone
+//*[@id="header"]//*[contains(@class,'shop-phone')]/text()[2]
 
+05) 0123-456-789
+#header span.shop-phone  strong
+//*[@id="header"]//span[contains(@class,'shop-phone')]//strong
 
+06) Contact Us
+#contact-link a
+//*[@id='contact-link']//a
+
+07) Sign in
+#header div.header_user_info a
+//*[@id="header"]//div[contains(@class,'header_user_info')]//a
+
+08.a) YourLogo image
+#header_logo img
+//*[@id="header_logo"]//img
+
+08.b) YourLogo a
+#header_logo a
+//*[@id="header_logo"]//a
+
+09) Search input
+#search_query_top
+//*[@id="search_query_top"]
+
+10) Search button(submit)
+#searchbox button
+//*[@id="searchbox"]//button
+
+11) Cart
+#header div.shopping_cart a[title='View my shopping cart']
+//*[@id="header"]//div[contains(@class,'shopping_cart')]//a[@title='View my shopping cart']
+
+12) WOMEN
+#block_top_menu a[title="Women"]
+//*[@id="block_top_menu"]//a[@title="Women"]
+
+13) Dresses
+#block_top_menu ul.sf-menu > li > a[title="Dresses"]
+//*[@id="block_top_menu"]//ul[contains(@class,'sf-menu')]/li/a[@title="Dresses"]
+
+14) T-shirts
+#block_top_menu ul.sf-menu > li > a[title="T-shirts"]
+//*[@id="block_top_menu"]//ul[contains(@class,'sf-menu')]/li/a[@title="T-shirts"]
+
+15) Authentication(Home link)
+#columns a.home
+//*[@id="columns"]//a[contains(@class,'home')]
+
+16) Authentication(text)
+  --- first from the end (last): ---
+#columns div.breadcrumb span:nth-last-of-type(1)
+//*[@id="columns"]//div[contains(@class,'breadcrumb')]//span[last()]
+  --- second from the begin: ---
+#columns div.breadcrumb span:nth-of-type(2)
+//*[@id="columns"]//div[contains(@class,'breadcrumb')]//span[2]
+
+17) AUTHENTICATION
+#center_column *.page-heading
+//*[@id="center_column"]//*[contains(@class,'page-heading')]
+
+18) CREATE AN ACCOUNT
+#create-account_form *.page-subheading
+//*[@id="create-account_form"]//*[contains(@class,'page-subheading')]
+
+19) Please enter your email address to create an account.
+#create-account_form div.clearfix p
+//*[@id="create-account_form"]//div[contains(@class,'clearfix')]//p
+
+20) Email address (CREATE AN ACCOUNT) (label)
+#create-account_form div.form-group > label
+//*[@id="create-account_form"]//div[contains(@class,'form-group')]/label
+
+21) Email address (CREATE AN ACCOUNT) (input)
+#email_create
+//*[@id="email_create"]
+
+22) Create an account (button, submit)
+#SubmitCreate
+//*[@id="SubmitCreate"]
+
+23) ALREADY REGISTERED?
+#login_form *.page-subheading
+
+24) Email address (ALREADY REGISTERED?) (label)
+#login_form div.form-group > label[for='email']
+//*[@id="login_form"]//div[contains(@class,'form-group')]/label[@for='email']
+
+25) Email address (ALREADY REGISTERED?) (input)
+#email
+//*[@id="email"]
+
+26) Password (label)
+#login_form div.form-group > label[for='passwd']
+//*[@id="login_form"]//div[contains(@class,'form-group')]/label[@for='passwd']
+
+27) Password (input)
+#passwd
+//*[@id="passwd"]
+
+28) Forgot your password?
+#login_form p.lost_password a
+//*[@id="login_form"]//p[contains(@class,'lost_password')]/a
+
+29) Sign in (button, submit)
+#SubmitLogin
+//*[@id="SubmitLogin"]
 
 
